@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SALARY_CONSIGNATION" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2e16b779-9513-41a3-94f8-77ae9a6cc73c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="AccountNumber" class="java.lang.String"/>
+	<parameter name="Name" class="java.lang.String"/>
+	<parameter name="NetSalary" class="java.lang.String"/>
+	<parameter name="Profession" class="java.lang.String"/>
+	<parameter name="ProfessionalSituation" class="java.lang.String"/>
+	<parameter name="TypeOfEmployee" class="java.lang.String"/>
+	<parameter name="ContractDuration" class="java.lang.String"/>
+	<parameter name="DocDate" class="java.lang.String"/>
+	<parameter name="Logo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="84" splitType="Stretch">
+			<staticText>
+				<reportElement x="120" y="31" width="398" height="10" uuid="ea32e2fa-b57b-487e-ad53-73256920ab4a">
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="DejaVu Sans" size="7" isItalic="true"/>
+					<paragraph lineSpacingSize="1.0" rightIndent="0"/>
+				</textElement>
+				<text><![CDATA[SOCIEDADE DE FORMAÇÃO, CONSULTORIA E AUDITORIA EM TRANSPORTES E COMUNICAÇÕES, SA]]></text>
+			</staticText>
+			<image>
+				<reportElement x="40" y="0" width="167" height="36" uuid="3b98935c-c7d8-4ddd-811f-c2e1656d63ea">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{Logo}]]></imageExpression>
+			</image>
+			<line direction="BottomUp">
+				<reportElement x="40" y="40" width="478" height="1" uuid="1889b9db-7388-4d8a-8cdb-06b874455eb8"/>
+				<graphicElement>
+					<pen lineStyle="Solid" lineColor="#354C9F"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="90" y="34" width="370" height="30" uuid="3281ca29-5e41-4030-8fcc-710b5fd884e1"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONSIGNAÇÃO DE SALÁRIO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="396" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="-10" width="479" height="280" uuid="4bfe4253-5e5f-4d82-a52f-38e0244f41d2"/>
+				<box padding="0"/>
+				<textElement textAlignment="Justified">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[String.format("\n\n\nTRANSCOM, SA, com sede no Prolong. da Av. Kim Il Sung, IFT/TMCEL, Edifício D1, na Cidade " +
+                "de Maputo, matriculada na Conservatória do Registo das Entidades Legais, com o número  101312968, " +
+                "titular do NUIT 400006938, vem por este meio declarar que"+ " o/a Sr/a. %s, é seu/sua " +
+                "%s, com %s, %s, exercendo as funções de %s.\n\nMais se informa que o seu salário líquido de MZN %s, " +
+                "assim como outras remunerações, bónus atribuídos ou " +"indemnizações, serão creditados na conta n.º %s, " +
+                "titulada pelo/a colaborador/a acima referenciado/a, até instruções em contrário por escrito do BCI, " +
+                "Sarl, tendo como datas previstas para pagamento de 19 a 22 de cada mês.\n\n\n"
+                +"Maputo, %s\n\n\n\n", $P{Name}, $P{TypeOfEmployee}, $P{ProfessionalSituation}, $P{ContractDuration}, $P{Profession}, $P{NetSalary}, $P{AccountNumber}, $P{DocDate})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="110" y="303" width="340" height="21" uuid="b77503e9-720b-4e80-80f3-430a007859d3"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10"/>
+				</textElement>
+				<text><![CDATA[A Direcção de Recursos Humanos da TRANSCOM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="345" width="200" height="30" uuid="ff9e490f-b82d-4ba9-81be-754da9f0733a"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="10"/>
+				</textElement>
+				<text><![CDATA[(Dra. Ana Filipa Pedrosa)]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement x="175" y="340" width="210" height="1" uuid="3a2db224-f92f-4cea-a603-0d05790aa0cb"/>
+				<graphicElement>
+					<pen lineStyle="Solid" lineColor="#030303"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="104" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="44" width="479" height="23" uuid="fe3d9a3f-a0f5-4516-a15c-621a260da7ff"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="6"/>
+				</textElement>
+				<text><![CDATA[Prolong. Av. Kim Il Sung, (IFT/TMCEL), Edf. D1, C. Postal 2088, Maputo - Moçambique  |  T: (+258) 21 48 87 92/ 6  |  C: (+258) 82 30 62 620 |  transcom@transcom.co.mz
+NUIT: 400006938  |  Matriculada na Conservatória do Registo das Entidades Legais sob o Número 101312968
+www.transcom.co.mz
+
+
+          
+]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement x="40" y="37" width="479" height="1" uuid="33ea19e5-a72e-4587-992b-67521c0f3e7f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineStyle="Solid" lineColor="#354C9F"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>
