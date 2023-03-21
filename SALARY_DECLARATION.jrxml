@@ -68,7 +68,7 @@
 				<textFieldExpression><![CDATA[String.format("\n\n\nTRANSCOM, SA, com sede no Prolong. da Av. Kim Il Sung, IFT/TMCEL, Edifício D1, na Cidade " +
                 "de Maputo, matriculada na Conservatória do Registo das Entidades Legais, com o número  101312968, " +
                 "titular do NUIT 400006938, vem por este meio declarar que"+ " o/a Sr/a. %s, é seu/sua " +
-                "%s, com %s, %s, exercendo as funções de %s.\n\nMais se informa que o seu salário líquido de MZN %s.\n\n\n" 
+                "%s, com %s, %s, exercendo as funções de %s.\n\nMais se informa que o seu salário líquido é de MZN %s.\n\n\n" 
                 +"Maputo, %s\n\n\n\n", $P{Name}, $P{TypeOfEmployee}, $P{ProfessionalSituation}, $P{ContractDuration}, $P{Profession}, $P{NetSalary}, $P{DocDate})]]></textFieldExpression>
 			</textField>
 			<staticText>
