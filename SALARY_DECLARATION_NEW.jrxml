@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SALARY_CONSIGNATION" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2e16b779-9513-41a3-94f8-77ae9a6cc73c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="AccountNumber" class="java.lang.String"/>
+	<parameter name="Name" class="java.lang.String"/>
+	<parameter name="NetSalary" class="java.lang.String"/>
+	<parameter name="Profession" class="java.lang.String"/>
+	<parameter name="ProfessionalSituation" class="java.lang.String"/>
+	<parameter name="TypeOfEmployee" class="java.lang.String"/>
+	<parameter name="ContractDuration" class="java.lang.String"/>
+	<parameter name="DocDate" class="java.lang.String"/>
+	<parameter name="Logo" class="java.lang.String"/>
+	<parameter name="Nationality" class="java.lang.String"/>
+	<parameter name="BirthDay" class="java.lang.String"/>
+	<parameter name="BirthMonth" class="java.lang.String"/>
+	<parameter name="BirthYear" class="java.lang.String"/>
+	<parameter name="AdmissionDay" class="java.lang.String"/>
+	<parameter name="AdmissionMonth" class="java.lang.String"/>
+	<parameter name="AdmissionYear" class="java.lang.String"/>
+	<parameter name="DocDay" class="java.lang.String"/>
+	<parameter name="DocMonth" class="java.lang.String"/>
+	<parameter name="DocYear" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="84" splitType="Stretch">
+			<image>
+				<reportElement x="350" y="0" width="167" height="36" uuid="3b98935c-c7d8-4ddd-811f-c2e1656d63ea">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{Logo}]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="90" y="34" width="370" height="30" uuid="3281ca29-5e41-4030-8fcc-710b5fd884e1"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DECLARAÇÃO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="396" splitType="Stretch">
+			<textField>
+				<reportElement x="38" y="-3" width="479" height="235" uuid="4bfe4253-5e5f-4d82-a52f-38e0244f41d2"/>
+				<box padding="0"/>
+				<textElement textAlignment="Justified" markup="styled">
+					<font fontName="DejaVu Sans" size="10"/>
+					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[ String.format("\n\n\nA <b>2iBi - CONSULTORIA E TECNOLOGIAS DE INFORMAÇÃO SU, LDA</b> com NUIT 400401731, " +
+                "representada por <b>Luís Fernando Leal Leonor</b> na qualidade de sócio-gerente, confirma que , " +
+                "%sde nacionalidade moçambicana, nascido a %s de %s de %s, é  " +
+                "colaborador desta instituição desde %s de %s de %s, exercendo a função de "
+                +"<b>Operations Manager</b> e auferindo um salário bruto mensal de %s Meticais.\n\n\n"+ 
+                "\t\t\t\tBeira, aos %s de %s de %s\n", $P{Name}, $P{BirthDay}, $P{BirthMonth},$P{BirthYear}, $P{AdmissionDay}, $P{AdmissionMonth}, $P{AdmissionYear}, $P{NetSalary}, $P{DocDay},$P{DocMonth},$P{DocYear})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="110" y="232" width="340" height="21" uuid="b77503e9-720b-4e80-80f3-430a007859d3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Century Gothic" size="10"/>
+				</textElement>
+				<text><![CDATA[A Gêrencia]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement x="175" y="269" width="210" height="1" uuid="3a2db224-f92f-4cea-a603-0d05790aa0cb"/>
+				<graphicElement>
+					<pen lineStyle="Solid" lineColor="#030303"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="104" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="44" width="479" height="23" uuid="fe3d9a3f-a0f5-4516-a15c-621a260da7ff"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="9"/>
+				</textElement>
+				<text><![CDATA[2iBi –Consultoria e Tecnologias de Informação, Lda. | Nuit: 400 401 731
+Av. Mártires da Revolução, Edifício CPMZ, 1452, 1.º andar, Ala Sul | Beira | Moçambique
+Phone: (+258) 23 313 702
+
+]]></text>
+			</staticText>
+			<line direction="BottomUp">
+				<reportElement x="40" y="37" width="479" height="1" uuid="33ea19e5-a72e-4587-992b-67521c0f3e7f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineStyle="Solid" lineColor="#354C9F"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>
