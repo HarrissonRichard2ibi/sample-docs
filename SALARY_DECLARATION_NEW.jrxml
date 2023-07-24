@@ -60,10 +60,10 @@
 				</textElement>
 				<textFieldExpression><![CDATA[ String.format("\n\n\nA <b>2iBi - CONSULTORIA E TECNOLOGIAS DE INFORMAÇÃO SU, LDA</b> com NUIT 400401731, " +
                 "representada por <b>Luís Fernando Leal Leonor</b> na qualidade de sócio-gerente, confirma que , " +
-                "%sde nacionalidade moçambicana, nascido a %s de %s de %s, é  " +
+                "%s de nacionalidade %s, nascido a %s de %s de %s, é  " +
                 "colaborador desta instituição desde %s de %s de %s, exercendo a função de "
-                +"<b>Operations Manager</b> e auferindo um salário bruto mensal de %s Meticais.\n\n\n"+ 
-                "\t\t\t\tBeira, aos %s de %s de %s\n", $P{Name}, $P{BirthDay}, $P{BirthMonth},$P{BirthYear}, $P{AdmissionDay}, $P{AdmissionMonth}, $P{AdmissionYear}, $P{NetSalary}, $P{DocDay},$P{DocMonth},$P{DocYear})]]></textFieldExpression>
+                +"<b>%s</b> e auferindo um salário bruto mensal de %s Meticais.\n\n\n"+ 
+                "\t\t\t\tBeira, aos %s de %s de %s\n", $P{Name}, $P{Nationality},$P{BirthDay}, $P{BirthMonth},$P{BirthYear}, $P{AdmissionDay}, $P{AdmissionMonth}, $P{AdmissionYear},$P{Profession}, $P{NetSalary}, $P{DocDay},$P{DocMonth},$P{DocYear})]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="110" y="232" width="340" height="21" uuid="b77503e9-720b-4e80-80f3-430a007859d3"/>
