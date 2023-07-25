@@ -58,8 +58,8 @@
 					<font fontName="DejaVu Sans" size="10"/>
 					<paragraph lineSpacing="1_1_2" lineSpacingSize="1.15"/>
 				</textElement>
-				<textFieldExpression><![CDATA[ String.format("\n\n\nA <b>2iBi - CONSULTORIA E TECNOLOGIAS DE INFORMAÇÃO SU, LDA</b> com NUIT 400401731, " +
-                "representada por <b>Luís Fernando Leal Leonor</b> na qualidade de sócio-gerente, confirma que , " +
+				<textFieldExpression><![CDATA[String.format("\n\n\nA <b>2iBi - CONSULTORIA E TECNOLOGIAS DE INFORMAÇÃO SU, LDA</b> com NUIT 400401731, " +
+                "representada por <b>Luís Fernando Leal Leonor</b> na qualidade de sócio-gerente, confirma que " +
                 "%s de nacionalidade %s, nascido a %s de %s de %s, é  " +
                 "colaborador desta instituição desde %s de %s de %s, exercendo a função de "
                 +"<b>%s</b> e auferindo um salário bruto mensal de %s Meticais.\n\n\n"+ 
@@ -86,7 +86,7 @@
 	<pageFooter>
 		<band height="67" splitType="Stretch">
 			<staticText>
-				<reportElement x="40" y="44" width="479" height="23" uuid="fe3d9a3f-a0f5-4516-a15c-621a260da7ff"/>
+				<reportElement x="40" y="30" width="479" height="37" uuid="fe3d9a3f-a0f5-4516-a15c-621a260da7ff"/>
 				<textElement textAlignment="Center">
 					<font fontName="DejaVu Sans" size="9"/>
 				</textElement>
@@ -97,7 +97,7 @@ Phone: (+258) 23 313 702
 ]]></text>
 			</staticText>
 			<line direction="BottomUp">
-				<reportElement x="40" y="37" width="479" height="1" uuid="33ea19e5-a72e-4587-992b-67521c0f3e7f">
+				<reportElement x="40" y="23" width="479" height="1" uuid="33ea19e5-a72e-4587-992b-67521c0f3e7f">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<graphicElement>
